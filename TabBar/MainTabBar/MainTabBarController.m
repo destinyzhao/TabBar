@@ -10,8 +10,9 @@
 #import "BHomeController.h"
 #import "CHomeController.h"
 #import "DHomeController.h"
+#import "CYLPlusButtonSubclass.h"
 
-@interface MainTabBarController ()
+@interface MainTabBarController ()<UITabBarControllerDelegate>
 
 @end
 
@@ -23,6 +24,10 @@
 }
 
 - (instancetype)initWithContext:(NSString *)context {
+    
+    // 中间异形按钮
+    [CYLPlusButtonSubclass registerPlusButton];
+    
     /**
      * 以下两行代码目的在于手动设置让TabBarItem只显示图标，不显示文字，并让图标垂直居中。
      * 等 效于在 `-tabBarItemsAttributesForController` 方法中不传 `CYLTabBarItemTitle` 字段。
@@ -71,14 +76,13 @@
 
 - (NSArray *)tabBarItemsAttributesForTabBar {
     // lottie动画的json文件来自于NorthSea, respect!
-//    CGFloat firstXOffset = -12/2;
     NSDictionary *firstTabBarItemsAttributes = @{
                                                  CYLTabBarItemTitle : @"首页",
                                                  CYLTabBarItemImage : [UIImage imageNamed:@"home_normal"],
                                                  CYLTabBarItemSelectedImage : @"home_highlight",
                                                  CYLTabBarItemTitlePositionAdjustment: [NSValue valueWithUIOffset:UIOffsetMake(0, 1)],//设置文本与图片的Position
                                                  };
-//    CGFloat secondXOffset = (-25+2)/2;
+
     NSDictionary *secondTabBarItemsAttributes = @{
                                                   CYLTabBarItemTitle : @"鱼塘",
                                                   CYLTabBarItemImage : [UIImage imageNamed:@"fishpond_normal"],

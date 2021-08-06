@@ -27,7 +27,7 @@
     
     //模拟数字角标
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [tabBarController showTabBarBadgeWithIndex:2 badge:@"100"];
+        [tabBarController showTabBarBadgeWithIndex:3 badge:@"100"];
     });
     
     return YES;

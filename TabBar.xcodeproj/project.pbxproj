@@ -25,6 +25,7 @@
 		DE30ECB526BCD11E00367148 /* DHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE30ECB326BCD11E00367148 /* DHomeController.m */; };
 		DE30ECB626BCD11E00367148 /* DHomeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE30ECB426BCD11E00367148 /* DHomeController.xib */; };
 		DE30ECBA26BCD19000367148 /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE30ECB926BCD19000367148 /* MainTabBarController.m */; };
+		DE30ECC026BCFBAF00367148 /* CYLPlusButtonSubclass.m in Sources */ = {isa = PBXBuildFile; fileRef = DE30ECBE26BCFBAE00367148 /* CYLPlusButtonSubclass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,8 @@
 		DE30ECB426BCD11E00367148 /* DHomeController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DHomeController.xib; sourceTree = "<group>"; };
 		DE30ECB826BCD19000367148 /* MainTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTabBarController.h; sourceTree = "<group>"; };
 		DE30ECB926BCD19000367148 /* MainTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
+		DE30ECBE26BCFBAE00367148 /* CYLPlusButtonSubclass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLPlusButtonSubclass.m; sourceTree = "<group>"; };
+		DE30ECBF26BCFBAE00367148 /* CYLPlusButtonSubclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLPlusButtonSubclass.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +222,8 @@
 		DE30ECB726BCD16E00367148 /* MainTabBar */ = {
 			isa = PBXGroup;
 			children = (
+				DE30ECBF26BCFBAE00367148 /* CYLPlusButtonSubclass.h */,
+				DE30ECBE26BCFBAE00367148 /* CYLPlusButtonSubclass.m */,
 				DE30ECB826BCD19000367148 /* MainTabBarController.h */,
 				DE30ECB926BCD19000367148 /* MainTabBarController.m */,
 			);
@@ -410,6 +415,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE30ECC026BCFBAF00367148 /* CYLPlusButtonSubclass.m in Sources */,
 				DE30EC7226BCCE8800367148 /* ViewController.m in Sources */,
 				DE30EC6C26BCCE8800367148 /* AppDelegate.m in Sources */,
 				DE30ECBA26BCD19000367148 /* MainTabBarController.m in Sources */,
