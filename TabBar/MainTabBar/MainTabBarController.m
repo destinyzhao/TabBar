@@ -21,9 +21,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
 }
 
-- (instancetype)initWithContext:(NSString *)context {
+- (instancetype)initTabBar{
     
     // 中间异形按钮
     [CYLPlusButtonSubclass registerPlusButton];
@@ -39,7 +40,7 @@
                         tabBarItemsAttributes:[self tabBarItemsAttributesForTabBar]
                                   imageInsets:imageInsets
                       titlePositionAdjustment:titlePositionAdjustment
-                                      context:context
+                                      context:@""
                 ]) {
         [self customizeTabBarAppearanceWithTitlePositionAdjustment:titlePositionAdjustment];
         self.delegate = self;

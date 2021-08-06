@@ -21,12 +21,11 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     [self.window makeKeyAndVisible];
     
-    MainTabBarController *tabBarController = [[MainTabBarController alloc] initWithContext:@""];
-//    MainRootController *rootViewController = [[MainRootController alloc] init];
+    MainTabBarController *tabBarController = [[MainTabBarController alloc] initTabBar];
     [self.window setRootViewController:tabBarController];
     
     //模拟数字角标
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [tabBarController showTabBarBadgeWithIndex:3 badge:@"100"];
     });
     

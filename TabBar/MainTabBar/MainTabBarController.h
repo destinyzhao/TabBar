@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface MainTabBarController : CYLTabBarController
 
-- (instancetype)initWithContext:(NSString *)context;
+- (instancetype)initTabBar;
 
 - (void)showTabBarBadgeWithIndex:(NSInteger)index badge:(NSString *)badge;
 
